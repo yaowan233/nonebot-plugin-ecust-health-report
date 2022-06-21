@@ -41,7 +41,7 @@ async def _(event: Event):
     await stop.finish('已停止自动健康打卡')
 
 
-@scheduler.scheduled_job("cron", hour="15", minute="55", max_instances=10, misfire_grace_time=10)
+@scheduler.scheduled_job("cron", hour="1", minute="5", max_instances=10, misfire_grace_time=10)
 @go.handle()
 async def _():
     data = get_school_account()
