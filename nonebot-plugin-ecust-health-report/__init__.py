@@ -86,10 +86,11 @@ async def run(playwright: Playwright, stu_id, password) -> None:
     # Click text=下一步
     await page.click("text=下一步")
     await page.click("label:has-text(\"健康\")")
-    # Click #radio_sfycxxwc34
-    await page.click("#radio_sfycxxwc34")
+    # Click #radio_sfycxxwc42
+    await page.click("#radio_sfycxxwc42")
     # Click text=*行程码是否绿码： 是否 >> ins
     await page.click("#radio_xcm5")
+    await page.click("text=在上海")
     # Click text=提交
     await page.click("text=提交")
     # Click text=确定
